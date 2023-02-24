@@ -9,7 +9,7 @@
     "build-step2": "webpack --mode production --config step2.config.js",
     "start-step1": "npm run build-step1 && node dist/step1-bundle.js",
     "start-step2": "webpack serve --open --config step2.config.js",
-    "pre-deploy": "npm run build",
+    "predeploy": "webpack --mode production --config step2.config.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
