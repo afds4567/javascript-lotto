@@ -13,8 +13,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 0.87);
-  background: #fcfcfd;
+  background-color: rgba(0, 0, 0, 0.87);
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -61,10 +60,6 @@ main {
 
 h2 {
   margin: 10px auto;
-  width: 382px;
-  height: 24px;
-  top: 52px;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -184,18 +179,24 @@ label {
   height: 36px;
   border: 1px solid #b4b4b4;
   border-radius: 4px;
+  text-align: center;
 }
 
 #bonus-number-input {
   width: 34px;
   height: 36px;
   float: right;
+  text-align: center;
 }
 
 #check-result-button {
   width: 382px;
   height: 36px;
   margin-top: 12px;
+}
+
+dialog {
+  padding: 0;
 }
 
 #modal-container {
@@ -206,16 +207,12 @@ label {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #modal-section {
+  position: relative;
   box-sizing: border-box;
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -223,6 +220,8 @@ label {
   background-color: white;
   width: 350px;
   height: auto;
+  margin: auto;
+  margin-top: 10%;
   border-radius: 4px;
 }
 
@@ -232,6 +231,7 @@ label {
   right: 4.57%;
   top: 3.2%;
   bottom: 94%;
+  cursor: pointer;
 }
 
 #modal-title {
@@ -250,6 +250,10 @@ td {
 
 #retry-button {
   width: 100%;
+}
+
+dialog::-webkit-scrollbar {
+  display: none;
 }
 
 footer {
